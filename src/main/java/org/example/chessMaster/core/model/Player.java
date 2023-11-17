@@ -11,7 +11,7 @@ public abstract class Player {
     public String setCurrentField() {
         String field = "";
         while(!validateField(field)) {
-        System.out.println("Podaj oznaczenie biezacego pola: ");
+        System.out.println("Podaj oznaczenie w notacji szachowej biezacego pola: ");
             field = scanner.nextLine();
         }
         return field;
@@ -19,7 +19,7 @@ public abstract class Player {
     public String setTargetField() {
         String field = "";
         while(!validateField(field)) {
-            System.out.println("Podaj oznaczenie pola docelowego: ");
+            System.out.println("Podaj oznaczenie w notacji szachowej pola docelowego: ");
             field = scanner.nextLine();
         }
         return field;
